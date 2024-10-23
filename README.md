@@ -11,6 +11,11 @@
 ### Model
 
 ### Endpoints
+| End points  | Description  |  Example |   |   |
+|---|---|---|---|---|
+|  add_comments | to add comments you will have to set it as a post request, instead of ediiting in the body go to params and select form, pick which drill you would like in the scale from id 1-4, then leave a comment about the drill.  |  |   |   |
+|   add_tip|  to add tips for the drill,  |   |   |   |
+| add_likes |   |   |   |   |
 
 *Replace this with a guide to your endpoints and model. You can write a Markdown chart [here](https://www.tablesgenerator.com/markdown_tables)*
 

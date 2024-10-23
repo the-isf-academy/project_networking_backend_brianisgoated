@@ -32,6 +32,6 @@ class Drill(Model):
         self.likes += 1
         self.save()
 
-    def difficulty(self):
+    def set_difficulty(self):
         self.difficulty
     
