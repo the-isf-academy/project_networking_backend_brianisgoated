@@ -6,7 +6,7 @@ class Drill(Model):
     drill_name = StringField()
     instructions = StringField()
     comments = StringField()
-    difficulty = IntegerField()
+    level = IntegerField()
     tip = StringField()
     likes = IntegerField()
 
@@ -15,9 +15,9 @@ class Drill(Model):
             'comments': self.comments, 
             'drill_name': self.drill_name,
             'instructions': self.instructions,
-            'difficulty': self.difficulty,
+            'level': self.level,
             'tip': self.tip,
-            'likes': self.likes
+            # 'likes': self.likes
         }
     
     def change_tip(self, new_tip):
@@ -28,9 +28,9 @@ class Drill(Model):
         self.comments = new_comments
         self.save()
 
-    def add_likes(self):
-        self.likes += 1
-        self.save()
+    # def add_likes(self):
+    #     self.likes += 1
+    #     self.save()
 
     def difficulty(self):
         self.difficulty

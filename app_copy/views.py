@@ -23,11 +23,11 @@ def change_tip(args):
     else:
         return {'error' : 'no drill exists'}
     
-@route_post(BASE_URL + 'add_likes', args={'id':int})
-def add_likes(args):
-    if Drill.objects.filter(id=args['id']).exists():
-        liked_drill = Drill.objects.get(id=args['id'])
-        liked_drill.add_likes()
-        return {'Drill': liked_drill.json_response()}
-    else:
-        return {'error' : 'no riddle exists'}
+# @route_post(BASE_URL + 'add_likes', args={'id':int})
+# def add_likes(args):
+#     if Drill.objects.filter(id=args['id']).exists():
+#         add_likes = Drill.objects.get(id=args['id'])
+#         add_likes.add_likes()
+#         return {'Drill': add_likes.json_response()}
+#     else:
+#         return {'error' : 'no riddle exists'}
