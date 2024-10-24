@@ -11,11 +11,12 @@
 ### Model
 
 ### Endpoints
-| End points  | Description  |  Example |   |   |
+| End points  | Description  |  Example |  Request |  Payload |
 |---|---|---|---|---|
-|  add_comments | to add comments you will have to set it as a post request, instead of ediiting in the body go to params and select form, pick which drill you would like in the scale from id 1-4, then leave a comment about the drill.  |  |   |   |
-|   add_tip|  to add tips for the drill,  |   |   |   |
-| add_likes |   |   |   |   |
+|  user_comments | allows the user to add or change a comment that other users have inputed  | comment: "I find this drill really helpful"|  post |  new_comment - str |
+|   change_tip|   helps other users in the program to be able to complete the drill |  tip: "form a C while dribbling" | post  | new_tip - str  |
+| add_likes | a user can like the drill if they find it useful or enjoy doing it  |   drill: crossover, like: 3|  post | add_likes - int|
+  |
 
 *Replace this with a guide to your endpoints and model. You can write a Markdown chart [here](https://www.tablesgenerator.com/markdown_tables)*
 
@@ -24,7 +25,7 @@
 ## Setup
 
 ### Contents
-
+ 
 Here's what is included:
 - `\app`
     - `models.py` - `Fortune` model

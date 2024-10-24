@@ -24,7 +24,7 @@ class Drill(Model):
         self.tip = new_tip
         self.save()
 
-    def change_comments(self, new_comments):
+    def user_comments(self, new_comments):
         self.comments = new_comments
         self.save()
 
